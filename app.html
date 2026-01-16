@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entropy Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">Ø</div>
+        <ul>
+            <li><a href="index.html">Logout</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        <header>
+            <h2>Entropy Monitor v1.0.4</h2>
+        </header>
+        <section class="stats-grid">
+            <div class="card">
+                <h3>Current Entropy</h3>
+                <div id="entropy-gauge" class="gauge">50%</div>
+            </div>
+            <div class="card">
+                <h3>System Status</h3>
+                <p id="status-text">Unstable</p>
+            </div>
+        </section>
+        <section class="controls">
+            <button id="add-chaos-btn" class="chaos-btn">INJECT CHAOS (+10%)</button>
+            <button id="reset-btn">RESET ORDER</button>
+        </section>
+        <section class="logs">
+            <h3>Activity Log</h3>
+            <ul id="log-list"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
